@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salarioza.mysharedpreferences.MainActivity">
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/psswrd"
+        android:text="Username:"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/name_edt"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/saveinf"
+        android:layout_toEndOf="@+id/saveinf"
+        android:layout_marginLeft="18dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:id="@+id/psswrd"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/name_edt"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/pw_edt"
+        android:layout_alignBaseline="@+id/psswrd"
+        android:layout_alignBottom="@+id/psswrd"
+        android:layout_alignLeft="@+id/name_edt"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/saveinf"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="66dp"
+        android:text="Save info"
+        android:layout_below="@+id/pw_edt"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname"
+        android:onClick="saveInfo"/>
+    <Button
+        android:id="@+id/display"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="38dp"
+        android:text="Display info"
+        android:layout_alignTop="@+id/saveinf"
+        android:layout_toRightOf="@+id/saveinf"
+        android:layout_toEndOf="@+id/saveinf"
+        android:onClick="loadInfo"
+        />
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="280dp"
+        android:paddingLeft="100dp"
+        />
+    
+
+</RelativeLayout>
